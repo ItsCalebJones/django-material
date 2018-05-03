@@ -10,7 +10,7 @@
         {% endattrs %}>{{ bound_field.label }}</label>
         {% endpart %}
         {% part field control %}
-        <select{% attrs bound_field 'widget' default field.widget.attrs %}
+        <select height="260px" {% attrs bound_field 'widget' default field.widget.attrs %}
             id="id_{{ bound_field.html_name }}"
             name="{{ bound_field.html_name }}"
             {% if bound_field.errors %}class="invalid"{% endif %}
